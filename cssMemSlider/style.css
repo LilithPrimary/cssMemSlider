@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(0,0,0);
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: normal;
+  color: rgb(255,255,255);
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+body {
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
