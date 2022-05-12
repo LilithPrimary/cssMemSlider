@@ -164,30 +164,30 @@ input#btn4:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn4"]
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-input#btn1:checked ~ .slider__img-area > .first {
-    margin-left: 0;
+input#btn1:checked ~ .slider__img-area > .slider__img-wrapper {
+    transform: translate(0);
 }
-input#btn2:checked ~ .slider__img-area > .first {
-    margin-left: -100%;
+input#btn2:checked ~ .slider__img-area > .slider__img-wrapper {
+    transform: translate(-100%);
 }
-input#btn3:checked ~ .slider__img-area > .first {
-    margin-left: -200%;
+input#btn3:checked ~ .slider__img-area > .slider__img-wrapper {
+    transform: translate(-200%);
 }
-input#btn4:checked ~ .slider__img-area > .first {
-    margin-left: -300%;
+input#btn4:checked ~ .slider__img-area > .slider__img-wrapper {
+    transform: translate(-300%);
 }
 
-input#btn1:checked ~ .slider__bottom> .slider__text-wrapper > .first {
-    margin-top: 0;
+input#btn1:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text{
+    transform: translateY(0);
 }
-input#btn2:checked ~ .slider__bottom> .slider__text-wrapper > .first {
-    margin-top: -5rem;
+input#btn2:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+    transform: translateY(-100%);
 }
-input#btn3:checked ~ .slider__bottom> .slider__text-wrapper > .first {
-    margin-top: -10rem;
+input#btn3:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+    transform: translateY(-200%);
 }
-input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .first {
-    margin-top: -15rem;
+input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+    transform: translateY(-300%);
 }
 
 .footer {
