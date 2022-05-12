@@ -35,7 +35,6 @@ html,
 body {
   scroll-behavior: smooth;
   background-color: rgb(0,0,0);
-  font-size: 16px;
   line-height: normal;
   color: rgb(255,255,255);
   font-family: 'Rubik';
@@ -61,7 +60,6 @@ body {
 }
 .header {
     width: 100%;
-    height: 5vh;
     background-color: blanchedalmond;
 }
 .main {
@@ -77,6 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 1rem;
 }
 .slider__img-area {
     display: flex;
@@ -84,8 +83,9 @@ body {
     align-items: center;
     overflow: hidden;
     width: var(--vw);
-    border: 0.25rem solid white;
+    border: 0.25rem solid black;
     border-radius: 0.625rem;
+    box-shadow: 0 0 0.625rem black;
 }
 .slider__img-wrapper{
     width: 100%;
@@ -105,7 +105,8 @@ body {
 }
 .slider__text {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: start;
     height: 5rem;
     width: var(--vw);
     flex-shrink: 0;
@@ -119,7 +120,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    height: 3rem;
+    height: 1rem;
     width: 2rem;
 }
 .switcher__btn {
@@ -134,9 +135,8 @@ body {
 }
 .slider__radio{
     display: block;
-    width: 200px;
-    height: 100px;
-    display: none;
+    width: 0;
+    height: 0;
 }
 
 input#btn1:checked ~ .slider__switcher-wrapper>label[for="btn1"]>.switcher__btn,
@@ -174,8 +174,34 @@ input#btn4:checked ~ .slider__text-wrapper > .first {
 
 .footer {
     width: 100%;
-    height: 5vh;
     background-color: blanchedalmond;
+    padding: 0.5rem;
+    color: darkblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__wrapper {
+    width: var(--vw);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link:hover {
+    transition: 0.3s;
+}
+.link:hover {
+    color: aqua;
+}
+.year {
+    width: 3.5rem;
+}
+.rss {
+    width: 3.5rem;
+    text-align: right;
 }
 
 @media (max-width:768px) {
@@ -185,10 +211,4 @@ input#btn4:checked ~ .slider__text-wrapper > .first {
     .slider__switcher-wrapper {
         align-self: end;
     }
-}
-
-@media (max-height:768px) {
-    :root {
-        --vw: 80vw;
-      }
 }
