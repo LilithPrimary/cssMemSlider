@@ -122,6 +122,8 @@ body {
     cursor: pointer;
     height: 1rem;
     width: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
 }
 .switcher__btn {
     width: 1.3rem;
