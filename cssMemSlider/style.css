@@ -1,5 +1,5 @@
 :root {
-    --vw: 35rem;
+    --vw: 30rem;
   }
 
 * {
@@ -100,7 +100,7 @@ body {
     flex-direction: column;
     justify-content: start;
     height: 5rem;
-    width: var(--vw);
+    /* width: var(--vw); */
     overflow: hidden;
 }
 .slider__text {
@@ -108,7 +108,7 @@ body {
     align-items: flex-start;
     justify-content: start;
     height: 5rem;
-    width: var(--vw);
+    /* width: var(--vw); */
     flex-shrink: 0;
     transition: .5s;
 }
@@ -139,10 +139,19 @@ body {
     height: 0;
 }
 
-input#btn1:checked ~ .slider__switcher-wrapper>label[for="btn1"]>.switcher__btn,
-input#btn2:checked ~ .slider__switcher-wrapper>label[for="btn2"]>.switcher__btn,
-input#btn3:checked ~ .slider__switcher-wrapper>label[for="btn3"]>.switcher__btn,
-input#btn4:checked ~ .slider__switcher-wrapper>label[for="btn4"]>.switcher__btn {
+.slider__bottom {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    width: var(--vw);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+input#btn1:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn1"]>.switcher__btn,
+input#btn2:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn2"]>.switcher__btn,
+input#btn3:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn3"]>.switcher__btn,
+input#btn4:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn4"]>.switcher__btn {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -159,16 +168,16 @@ input#btn4:checked ~ .slider__img-area > .first {
     margin-left: -300%;
 }
 
-input#btn1:checked ~ .slider__text-wrapper > .first {
+input#btn1:checked ~ .slider__bottom> .slider__text-wrapper > .first {
     margin-top: 0;
 }
-input#btn2:checked ~ .slider__text-wrapper > .first {
+input#btn2:checked ~ .slider__bottom> .slider__text-wrapper > .first {
     margin-top: -5rem;
 }
-input#btn3:checked ~ .slider__text-wrapper > .first {
+input#btn3:checked ~ .slider__bottom> .slider__text-wrapper > .first {
     margin-top: -10rem;
 }
-input#btn4:checked ~ .slider__text-wrapper > .first {
+input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .first {
     margin-top: -15rem;
 }
 
@@ -194,7 +203,7 @@ input#btn4:checked ~ .slider__text-wrapper > .first {
     transition: 0.3s;
 }
 .link:hover {
-    color: aqua;
+    color: royalblue;
 }
 .year {
     width: 3.5rem;
@@ -207,6 +216,9 @@ input#btn4:checked ~ .slider__text-wrapper > .first {
 @media (max-width:768px) {
     :root {
         --vw: 80vw;
+    }
+    .slider__bottom {
+        flex-direction: column;
     }
     .slider__switcher-wrapper {
         align-self: end;
