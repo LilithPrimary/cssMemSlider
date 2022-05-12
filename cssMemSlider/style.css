@@ -157,10 +157,10 @@ body {
     justify-content: space-between;
 }
 
-input#btn1:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn1"]>.switcher__btn,
-input#btn2:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn2"]>.switcher__btn,
-input#btn3:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn3"]>.switcher__btn,
-input#btn4:checked ~ .slider__bottom>.slider__switcher-wrapper>label[for="btn4"]>.switcher__btn {
+input#btn1:checked ~ .slider__bottom > .slider__switcher-wrapper > label[for="btn1"] > .switcher__btn,
+input#btn2:checked ~ .slider__bottom > .slider__switcher-wrapper > label[for="btn2"] > .switcher__btn,
+input#btn3:checked ~ .slider__bottom > .slider__switcher-wrapper > label[for="btn3"] > .switcher__btn,
+input#btn4:checked ~ .slider__bottom > .slider__switcher-wrapper > label[for="btn4"] > .switcher__btn {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -177,16 +177,16 @@ input#btn4:checked ~ .slider__img-area > .slider__img-wrapper {
     transform: translate(-300%);
 }
 
-input#btn1:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text{
+input#btn1:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text{
     transform: translateY(0);
 }
-input#btn2:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+input#btn2:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text {
     transform: translateY(-100%);
 }
-input#btn3:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+input#btn3:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text {
     transform: translateY(-200%);
 }
-input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .slider__text {
+input#btn4:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text {
     transform: translateY(-300%);
 }
 
