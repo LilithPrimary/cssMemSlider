@@ -75,7 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 1rem;
+    row-gap: 2rem;
 }
 .slider__img-area {
     display: flex;
@@ -149,7 +149,8 @@ body {
 
 .slider__bottom {
     display: flex;
-    gap: 1rem;
+    column-gap: 1rem;
+    row-gap: 2rem;
     flex-direction: row-reverse;
     width: var(--vw);
     align-items: flex-start;
@@ -229,7 +230,7 @@ input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .first {
         flex-direction: column;
     }
     .slider__switcher-wrapper {
-        align-self: end;
+        align-self: center;
     }
     .slider__text-wrapper {
         margin-top: -2rem;
