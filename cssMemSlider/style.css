@@ -231,4 +231,7 @@ input#btn4:checked ~ .slider__bottom> .slider__text-wrapper > .first {
     .slider__switcher-wrapper {
         align-self: end;
     }
+    .slider__text-wrapper {
+        margin-top: -2rem;
+    }
 }
