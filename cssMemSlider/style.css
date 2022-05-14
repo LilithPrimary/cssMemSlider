@@ -135,7 +135,7 @@ body {
 
 .switcher:hover .switcher__btn {
     background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0.4rem pink;
 }
 .switcher:active .switcher__btn {
     /* transform: scale(0.9); */
@@ -208,8 +208,6 @@ input#btn4:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text {
 
 .link:hover {
     transition: 0.3s;
-}
-.link:hover {
     color: royalblue;
 }
 .year {
