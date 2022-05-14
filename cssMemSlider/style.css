@@ -218,7 +218,7 @@ input#btn4:checked ~ .slider__bottom > .slider__text-wrapper > .slider__text {
     text-align: right;
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     :root {
         --vw: 80vw;
     }
